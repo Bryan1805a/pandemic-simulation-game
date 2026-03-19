@@ -27,3 +27,12 @@ class GameState:
 
     # Event log
     event_log: list[str] = field(default_factory=list)
+
+    def advance_turn(self):
+        # Increase 1 week per turn
+        self.turn += 1
+        self.current_date += timedelta(days=7)
+        self.event_log.append(f"Turn {self.turn} started: {self.current_date.strftime('%d-%m-%Y')}")
+
+    def get_total_cases(self) -> int:
+        return self.infectious + self.recovered + self.deceased
