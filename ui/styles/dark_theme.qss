@@ -1,0 +1,79 @@
+/* GLOBAL */
+QMainWindow, QWidget {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: "Segeo UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* LABEL */
+QLabel {
+    color: #E0E0E0;
+    padding: 2px;
+}
+
+QLabel#header_label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4DB8FF;
+}
+
+/* BUTTONS */
+QPushButton {
+    background-color: #2D2D30;
+    color: #FFFFFF;
+    border: 1px solid #3F3F46;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3E3E42;
+    border: 1px solid #007ACC;
+}
+
+QPushButton:pressed {
+    background-color: #1E1E20;
+    border: 1px solid #005A9E;
+}
+
+QPushButton:disabled {
+    background-color: #1A1A1C;
+    color: #555555;
+    border: 1px solid #222222;
+}
+
+/* PANELS */
+QFrame {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 2px;
+}
+
+/* TABS */
+QTabWidget::pane {
+    border: 1px solid #333333;
+    background-color: #1E1E1E;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #252526;
+    color: #A0A0A0;
+    border: 1px solid #333333;
+    padding: 6px 15px;
+    min-width: 80px;
+}
+
+QTabBar::tab:selected {
+    background-color: 1E1E1E;
+    color: #FFFFFF;
+    border-bottom-color: #1E1E1E;
+    border-top: 2px solid #007ACC;
+}
+
+QTabBar::tab:!selected {
+    background-color: #2A2D2E;
+    color: #E0E0E0;
+}
